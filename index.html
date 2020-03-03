@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do app</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <style>
+        .wrap {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input {
+            padding: 5px 15px;
+            margin-right: 20px;
+            /* font-family: 'Roboto', sans-serif;v */
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid #23a223;
+            box-shadow: 2px 2px 4px 0px #23a223;
+        }
+
+        button {
+            padding: 5px 15px;
+            border: 2px solid #23a223;
+            border-radius: 5px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: .2s;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        button:hover {
+            box-shadow: 2px 2px 4px 0px #23a223;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <input type="text">
+        <button>Dodaj zadanie</button>
+        <h1>Liczba zadań: <span>0</span></h1>
+        <ul class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
