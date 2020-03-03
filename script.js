@@ -13,16 +13,12 @@ const addTask = (e) => {
     e.preventDefault();
     const inputText = input.value;
     if (inputText == '') return;
-
     let newLi = document.createElement('li');
     newLi.innerHTML = inputText + "<button>usuń</button>"
     newLi.classList.add('task');
-
     ul.appendChild(newLi);
-
     taskCounter.textContent = ul.getElementsByTagName('li').length;
     input.value = '';
-
     newLi.querySelector('button').addEventListener('click', removeBtn);
 }
 
